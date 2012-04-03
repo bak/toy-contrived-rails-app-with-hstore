@@ -1,0 +1,4 @@
+<h1><%= pluralize @entries.size, @type %></h1> 
+<% @entries.each do |entry| %>
+  <%= render :partial => "entries/#{entry.content['type']}_entry", :locals => { :entry => entry } %>
+<% end %>

@@ -1,5 +1,5 @@
 HstoreBlog::Application.routes.draw do
   resources :entries
 
-  root :to => 'entries#index'
+  root :to => 'application#index'
 end
